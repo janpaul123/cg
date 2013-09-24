@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <base target="_top">
+
+  <style>
+    html {
+      background: black;
+    }
+
+    html.jpp-iframe {
+      background: transparent;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      text-align: center;
+      border: 1px solid transparent; /* for block formatting context */
+    }
+
+    img {
+      display: inline-block;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  </style>
+
+
+  <title>Raytracer</title>
+
+  <p><img src="raytracer/scenes/marbles-final-small.jpg"></p>
+
+  <img src="raytracer/scenes/scene01-20110217-112910.png">
+  <img src="raytracer/scenes/scene01-20110217-123315.png">
+  <img src="raytracer/scenes/scene01-20110217-130000.png">
+  <img src="raytracer/scenes/scene01-20110217-150507.png">
+  <img src="raytracer/scenes/scene01-20110217-150822.png">
+  <img src="raytracer/scenes/scene01-20110217-150907.png">
+  <img src="raytracer/scenes/scene01-20110217-151301.png">
+  <img src="raytracer/scenes/scene01-20110218-204306.png">
+  <img src="raytracer/scenes/scene01-20110218-204604.png">
+  <img src="raytracer/scenes/scene01-20110218-214038.png">
+  <img src="raytracer/scenes/scene01-20110218-214119.png">
+  <img src="raytracer/scenes/scene01-20110218-221538.png">
+  <img src="raytracer/scenes/scene02-20110218-222443.png">
+  <img src="raytracer/scenes/scene01-zbuffer-20110224-124757.png">
+  <img src="raytracer/scenes/scene01-zbuffer-20110224-124814.png">
+  <img src="raytracer/scenes/scene01-normal-20110224-124853.png">
+  <img src="raytracer/scenes/scene-triangle-20110226-000703.png">
+  <img src="raytracer/scenes/scene-triangle-20110226-000851.png">
+  <img src="raytracer/scenes/scene-triangle-20110226-000908.png">
+  <img src="raytracer/scenes/scene-triangle-20110226-001102.png">
+  <img src="raytracer/scenes/scene-triangle-20110226-001435.png">
+  <img src="raytracer/scenes/scene-quad-20110226-030636.png">
+  <img src="raytracer/scenes/scene01-normal-20110301-151754.png">
+  <img src="raytracer/scenes/scene01-shadows-20110303-114212.png">
+  <img src="raytracer/scenes/scene01-shadows-20110303-121548.png">
+  <img src="raytracer/scenes/scene01-shadows-20110303-121943.png">
+  <img src="raytracer/scenes/scene01-lights-shadows-20110303-122758.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-104557.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-105118.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-105251.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-110511.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-111226.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-1120ish.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-113213.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-115658.png">
+  <img src="raytracer/scenes/scene01-reflect-lights-shadows-20110307-153556.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-154318.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-154522.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-154651.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-155137.png">
+  <img src="raytracer/scenes/scene01-refract-reflect-lights-shadows-20110307-161047.png">
+  <img src="raytracer/scenes/scene01-refract-reflect-lights-shadows-20110307-161053.png">
+  <img src="raytracer/scenes/scene01-refract-reflect-lights-shadows-20110307-161100.png">
+  <img src="raytracer/scenes/scene01-refract-reflect-lights-shadows-20110307-161106.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-161417.png">
+  <img src="raytracer/scenes/scene01-refract-20110307-161747.png">
+  <img src="raytracer/scenes/scene01-zoom-ss-reflect-lights-shadows-20110310-235705.png">
+  <img src="raytracer/scenes/scene01-camera-ss-reflect-lights-shadows-20110311-002853.png">
+  <img src="raytracer/scenes/scene01-dof-ss-reflect-lights-shadows-20110311-013353.png">
+  <img src="raytracer/scenes/scene01-dof-ss-reflect-lights-shadows-20110311-013420.png">
+  <img src="raytracer/scenes/scene01-dof-ss-reflect-refract-lights-shadows-20110311-020504.png">
+  <img src="raytracer/scenes/scene01-motion-dof-ss-reflect-lights-shadows-20110311-021515.png">
+  <img src="raytracer/scenes/scene01-motion-dof-ss-reflect-lights-shadows-20110311-021555.png">
+  <img src="raytracer/scenes/scene01-motion-dof-ss-reflect-lights-shadows-20110311-021702.png">
+  <img src="raytracer/scenes/scene01-motion-dof-ss-reflect-lights-shadows-20110311-022116.png">
+  <img src="raytracer/scenes/scene01-anaglyph-dof-ss-reflect-refract-lights-shadows-20110311-034417.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-121003.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-121758.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-121852.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-122520.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-122609.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-122750.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-122810.png">
+  <img src="raytracer/scenes/scene01-texcoords-20110317-123154.png">
+  <img src="raytracer/scenes/scene01-bluegrid-20110317-192841.png">
+  <img src="raytracer/scenes/scene01-bluegrid-20110317-193536.png">
+  <img src="raytracer/scenes/scene01-bluegrid-20110317-193814.png">
+  <img src="raytracer/scenes/earth-20110317-220944.png">
+  <img src="raytracer/scenes/scene01-earth-20110317-222013.png">
+  <img src="raytracer/scenes/scene01-earth-20110317-222229.png">
+  <img src="raytracer/scenes/earth-20110317-224813.png">
+  <img src="raytracer/scenes/earth-20110317-225212.png">
+  <img src="raytracer/scenes/scene01-earth-20110317-225258.png">
+  <img src="raytracer/scenes/earth-20110318-143435.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110318-181800.png">
+  <img src="raytracer/scenes/earth-20110318-182609.png">
+  <img src="raytracer/scenes/scene-triangle-rotated-20110318-192021.png">
+  <img src="raytracer/scenes/scene-quad-rotated-20110318-193201.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110318-210114.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110318-210655.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110318-235043.png">
+  <img src="raytracer/scenes/scene01-gooch-20110319-020601.png">
+  <img src="raytracer/scenes/scene01-ss-reflect-shadows-gooch-20110319-021653.png">
+  <img src="raytracer/scenes/scene01-gooch-20110319-021714.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110319-124600.png">
+  <img src="raytracer/scenes/earth-20110319-124608.png">
+  <img src="raytracer/scenes/earth-20110319-131403.png">
+  <img src="raytracer/scenes/scene01-ss-reflect-refract-lights-shadows-20110319-151044.png">
+  <img src="raytracer/scenes/scene01-noadapt-ss-reflect-refract-lights-shadows-20110319-151414.png">
+  <img src="raytracer/scenes/scene01-2-depth-ss-reflect-refract-lights-shadows-20110319-152254.png">
+  <img src="raytracer/scenes/scene01-3-depth-ss-reflect-refract-lights-shadows-20110319-152506.png">
+  <img src="raytracer/scenes/scene01-depth-ss-reflect-refract-lights-shadows-20110319-154514.png">
+  <img src="raytracer/scenes/earth-20110319-163214.png">
+  <img src="raytracer/scenes/earth-20110319-163407.png">
+  <img src="raytracer/scenes/scene01-everything-20110319-163416.png">
+  <img src="raytracer/scenes/scene01-texture-ss-reflect-lights-shadows-20110319-164529.png">
+  <img src="raytracer/scenes/scene01-gooch-20110319-175152.png">
+  <img src="raytracer/scenes/scene01-gooch-20110319-175306.png">
+  <img src="raytracer/scenes/scene01-everything-20110319-184115.png">
+  <img src="raytracer/scenes/photons-20110321-014711.png">
+  <img src="raytracer/scenes/photons-20110321-015047.png">
+  <img src="raytracer/scenes/photons-20110321-021605.png">
+  <img src="raytracer/scenes/photons-20110321-022406.png">
+  <img src="raytracer/scenes/photons-20110321-023341.png">
+  <img src="raytracer/scenes/photons-20110321-024430.png">
+  <img src="raytracer/scenes/photons-20110321-031422.png">
+  <img src="raytracer/scenes/photons-20110321-035056.png">
+  <img src="raytracer/scenes/photons-20110321-040322.png">
+  <img src="raytracer/scenes/photons-20110321-042926.png">
+  <img src="raytracer/scenes/photons-gooch-20110321-043448.png">
+  <img src="raytracer/scenes/scene01-everything-20110321-150321.png">
+  <img src="raytracer/scenes/scene01-everything-20110321-150840.png">
+  <img src="raytracer/scenes/scene01-everything-20110321-160318.png">
+  <img src="raytracer/scenes/scene01-everything-20110321-160417.png">
+  <img src="raytracer/scenes/scene01-everything-20110321-160821.png">
+  <img src="raytracer/scenes/scene01-everything-20110322-124035.png">
+  <img src="raytracer/scenes/obj-dolphins-20110328-024615.png">
+  <img src="raytracer/scenes/obj-devilduk-20110328-030418.png">
+  <img src="raytracer/scenes/obj-teddy-20110328-031145.png">
+  <img src="raytracer/scenes/obj-sphere-20110328-031614.png">
+  <img src="raytracer/scenes/obj-devilduk-texcoords-20110328-032327.png">
+  <img src="raytracer/scenes/obj-devilduk-bluegrid-20110328-033114.png">
+  <img src="raytracer/scenes/csg-spheres-20110328-170728.png">
+  <img src="raytracer/scenes/scene-triangle-texcoords-20110328-183631.png">
+  <img src="raytracer/scenes/scene-triangle-texcoords-20110328-183802.png">
+  <img src="raytracer/scenes/scene-triangle-texcoords-20110328-183936.png">
+  <img src="raytracer/scenes/scene-triangle-texcoords-20110328-184120.png">
+  <img src="raytracer/scenes/photons-triangle-20110328-185912.png">
+  <img src="raytracer/scenes/photons-triangle-20110328-190122.png">
+  <img src="raytracer/scenes/photons-triangle-20110328-195524.png">
+  <img src="raytracer/scenes/photons-triangle-20110328-201204.png">
+  <img src="raytracer/scenes/photons-triangle-20110329-005810.png">
+  <img src="raytracer/scenes/scene-cylinder-20110330-150044.png">
+  <img src="raytracer/scenes/scene-cylinder-20110330-150350.png">
+  <img src="raytracer/scenes/scene-cylinder-20110330-152108.png">
+  <img src="raytracer/scenes/scene-cylinder-20110330-152245.png">
+  <img src="raytracer/scenes/scene-cylinder-20110330-172511.png">
+  <img src="raytracer/scenes/scene-nut-20110330-180211.png">
+  <img src="raytracer/scenes/scene-nut-20110330-180338.png">
+  <img src="raytracer/scenes/scene-nut-20110330-181517.png">
+  <img src="raytracer/scenes/csg-lego-20110402-003337.png">
+
+  <iframe src="http://ghbtns.com/github-btn.html?user=janpaul123&repo=cg&type=watch&size=large" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; height: 30px;" allowTransparency="true"></iframe>
+
+  <p></p>
+</html>
